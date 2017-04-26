@@ -1,0 +1,241 @@
+/**{
+	background: rgba(0,0,0,0.1);
+}*/
+/*html{
+	padding: 0;
+}*/
+
+body{
+	background: #00334b;
+	color: #fff;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+h1{
+	text-align: center;
+}
+
+input,.task-item{
+	padding: 10px;
+	margin-bottom: 2px;
+	border-radius: 3px;
+}
+
+.add-task{
+	overflow: hidden;
+}
+
+form input[name=content]{
+	width: 90%;
+}
+
+input[type=text],.datetime{
+	width: 100%;
+	border: 0;
+    background: #ddd;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.5);
+    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.5);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+}
+
+.task-item{
+	background: #fff;	
+	color: #333;
+}
+
+.task-item.completed{
+   color: #aaa;
+   /*background: rgba(255,255,255,.8);*/
+   opacity: .6;
+}
+
+.task-item.completed:after{
+	content: ' ';
+	width: 98%;
+	height: 1px;
+	background: #aaa;
+	position: relative;
+	top: -10px;
+	display: block;
+	margin-left: 18px;
+}
+
+.task-list{
+	margin: 10px 0;
+	box-shadow: 0 2px 3px rgba(0,0,0,.4);
+	-moz-box-shadow:0 2px 3px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.4);
+	cursor: pointer;
+}
+
+*{
+   	-webkit-transition:background .2s;
+	-moz-transition:background .2s;
+	transition: background .2s;	
+}
+
+.task-item:hover{
+   background: #ccc;
+}
+
+.task-content{
+	margin-left: 10px;
+}
+
+.active{
+	color: #aaa;
+	font-size: 90%;
+	margin-left: 5px;
+}
+
+.active:hover{
+	color: #333;
+}
+
+button{
+	border: 0;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.primary,
+.add-task [type=button]:hover{
+	background: #afd9e9;
+}
+
+/*.calcel,*/
+/*.primary,*/
+.add-task [type=button]{
+	display: inline-block;
+	width: 15%;
+	background: #5fb9e4;
+	color: #333;
+}
+/*button.cancel,
+button.primary{
+    width:30%;
+}*/
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+.add-task input[type=text]:hover,
+.task-detail .datetime:hover,
+.add-task input[type=text]:focus,
+.task-dtail .datetime:focus{
+    background: #eee;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.2);
+    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+}
+
+
+
+.add-task input[type=text]{
+	float: left;
+	width: 84%;
+	margin-right:1%;
+}
+
+.add-task [type=text]{
+	width: 15%;
+
+}
+
+.task-detail{
+	overflow: auto;
+	display: none;
+	position: absolute;
+	padding: 10px;
+	border-radius: 3px;
+	background: #fff;
+	width: 50%;
+	height: 100%;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+}
+
+.task-detail-mask{
+	position: fixed;
+	display: none;
+	/*position: absolute;*/
+	padding: 10px;
+	border-radius: 3px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(30,30,30,.6);
+}
+
+.task-detail .content{
+	font-weight: 900;
+	cursor: pointer;
+	color: #000;
+	font-size: 100%;
+}
+
+.task-detail *{
+	margin-bottom: 10px;
+}
+
+textarea{
+	background: #ddd;
+	min-height: 70px;
+	width: 90%;
+	border-radius: 3px;
+}
+
+textarea:hover{
+	background: #eee;
+}
+
+.task-detail .datetime{
+	width: 90%;
+	padding: 5px;
+	/*margin-bottom: 10px;*/
+}
+
+.fr{
+	float: right;
+}
+
+.remind span{
+	color: #000;
+	font-size: 50%;
+}
+
+.remind button{
+	border: 0;
+	min-width: 50%;
+	padding: 5px;
+}
+
+.msg{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+    z-index: 10;
+	display: none;
+	text-align: center;
+	background: yellow;
+	/*padding: 2px;*/
+	color: #aaa;
+	/*margin: 0;*/
+}
+
+.anchor{
+	cursor: pointer;
+	font-size: 80%
+}
+
